@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Practice</title>
+    <style>
+        .highlight { background-color: yellow; }
+        .container { padding: 20px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>DOM Practice</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article>
+            <h2 class="title">My Coding Journey</h2>
+            <p class="content">Hi, I'm Mercy. I am a student based in Nairobi passionately learning software development, with a current focus on mastering HTML, CSS, JavaScript, and Git.</p>
+            <p class="content">When I am away from my screen, you can usually find me reading a good book, experimenting with new recipes, or out exploring the city.</p>
+        </article>
+
+
+        <section>
+            <h2>Form Section</h2>
+            <form id="contact-form">
+    <input type="text" id="name" name="name" value="Mercy Muiruri">
+    <input type="email" id="email" name="email" value="mercymuiruri2003@gmail.com">
+    <button type="submit">Submit</button>
+</form>
+
+        </section>
+       
+
+  <main class="container">
+
+    <!-- =======================================================
+         TASK 10.3: Event Bubbling & Delegation
+         EXERCISE 1: Understanding Bubbling
+         ======================================================= -->
+    <section>
+      <h2>Task 10.3: Understanding Bubbling</h2>
+      <div id="grandparent">
+        Grandparent
+        <div id="parent">
+          Parent
+          <div id="child">
+            Child
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         TASK 10.4: Form Handling
+         EXERCISE: Complete Form Validation
+         ======================================================= -->
+    <section>
+      <h2>Task 10.4: Form Section</h2>
+      <form id="contact-form">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value="Mercy Muiruri">
+        </div>
+        
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="mercymuiruri200@gmail.com">
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- =======================================================
+         MINI-PROJECT: Interactive To-Do List
+         ======================================================= -->
+    <section>
+      <h2>Mini-Project: Interactive To-Do List</h2>
+      
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Add a new task...">
+        <button type="submit">Add</button>
+      </form>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="todo-list">
+        <!-- Dynamic tasks added via JS -->
+      </ul>
+
+      <div class="stats">
+        <span id="items-left">0 items left</span>
+        <button id="clear-completed">Clear Completed</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026</p>
+  </footer>
+  
+  <!-- Main exercises script -->
+    <script src="dom.js"></script>
+
+    <!-- To-Do Mini-Project script -->
+    <script src="app.js"></script>
+</body>
+</html>
+
+</body>
+</html>
